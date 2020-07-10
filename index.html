@@ -51,7 +51,7 @@
   }
 
   function startRecording(button) {
-    recorder && recorder.record();
+    recorder && audio_context.resume(); recorder.record();
     button.disabled = true;
     button.nextElementSibling.disabled = false;
     __log('Recording...');
